@@ -1,9 +1,22 @@
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
 body {
   margin: 0;
   padding: 0;
   font-family: 'IBM Plex Sans',
   -apple-system, sans-serif;
   box-sizing: border-box;
+  background: #1A1A2E;
+  background: linear-gradient(136deg, rgba(26, 26, 46, 1) 0%, rgba(1, 36, 66, 1) 60%, rgba(22, 33, 62, 1) 100%);
+}
+
+header {
+    margin-bottom: 5.8rem;
 }
 
 .nav-bar {
@@ -14,13 +27,13 @@ body {
   top: 0;
   left: 0;
   right: 0;
-  /* z-index: 1000; */
-  padding: 0.4rem 2.6rem;
+  z-index: 1000;
+  padding: 0.4rem 5rem;
   background: #16213E;
-  background: linear-gradient(90deg, rgba(22, 33, 62, 1) 2%, rgba(26, 26, 46, 1) 100%);
-/*   backdrop-filter: blur(10px);
+  background: linear-gradient(90deg, rgba(22, 33, 62, 1) 0%, rgba(26, 26, 46, 1) 100%);
+  backdrop-filter: blur(10px);
   border-bottom: 1px solid #3282b833;
-  transition: all 0.3 ease; */
+  transition: all 0.3 ease;
 }
 
 .nav-bar > h1 {
@@ -39,7 +52,6 @@ body {
 .navbar-links.open {
     display: flex;
     flex-direction: column;
-
     position: absolute;
     right: 20px;
     top: 60px;
@@ -49,18 +61,6 @@ body {
     padding: 1rem 1.5rem;
     border-radius: 8px;
     gap: 1rem;
-}
-
-@media (min-width: 768px) {
-    .navbar-links{
-        list-style: none;
-        display: flex;
-        gap: 2.5rem;
-        color: white;
-    }
-    .mobile-menu-btn {
-        display: none;
-    }
 }
 
 .navbar-links li span {
@@ -86,4 +86,153 @@ body {
 
 .navbar-links li span:hover::after {
     width: 100%;
+}
+
+@keyframes fadeInUp {
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+}
+
+.hero-section {
+    padding-left: 0;
+}
+
+.hero-texts {
+    text-align: center;
+    padding: 2rem 2rem 0 2rem;
+}
+
+.hero-texts h1 {
+    background: linear-gradient(135deg,rgba(232, 232, 232, 1) 0%, rgba(50, 130, 184, 1) 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 2.2rem;
+    font-family: 'Playfair Display', serif;
+    font-weight: 900;
+    animation: fadeInUp 0.8s ease 0.2s forwards;
+}
+
+.hero-texts h6 {
+    font-size: 1.1rem;
+    color: #3282b8;
+    font-weight: 500;
+    animation: fadeInUp 0.8s ease 0.2s forwards;
+    opacity: 0;
+    letter-spacing: 1px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.hero-texts p {
+    color: #a0a0a0;
+    font-size: 1.1rem;
+    margin: 1.5rem 0;
+    line-height: 1.8;
+    animation: fadeInUp 0.8s ease 0.2s forwards;
+    opacity: 0;
+}
+
+.button-section {
+    display: flex;
+    justify-content: space-around;
+    gap: 1.3rem;
+}
+
+.button-section button {
+    padding: 1.5rem 1.5rem;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 500;
+    letter-spacing: 0.5ps;
+    transition: all 0.3s ease;
+}
+
+.button-section .btn1 {
+    background-color: #3282b8;
+    box-shadow: 0 4px 20px rgba(50, 130, 184, 0.3);
+}
+
+.button-section .btn1:hover {
+    background-color: #205375;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 30px rgba(50, 130, 184, 0.4);
+}
+
+.button-section .btn2 {
+    background-color: transparent;
+    border: 1px solid rgb(114, 110, 110);
+}
+
+.button-section .btn2:hover {
+    color: #3282b8;
+    border: 1px solid #3282b8;
+}
+
+.hero-img {
+    margin-top: 1rem;
+    text-align: center;
+}
+
+.hero-img img {
+    margin-top: 2rem;
+    width: 80vw;
+}
+
+@media (min-width: 768px) {
+    .navbar-links{
+        list-style: none;
+        display: flex;
+        gap: 2.5rem;
+        color: white;
+    }
+    .mobile-menu-btn {
+        display: none;
+    }
+    
+    .hero-section {
+        display: flex;
+        justify-content: space-between;
+        padding: 1.8rem 5rem;
+        gap: 10rem;
+    }
+
+    .hero-texts {
+        text-align: left;
+        padding-top: 0;
+    }
+    
+    .hero-texts h1 {
+        font-size: 4.5rem;
+        margin-top: 0;
+        margin-bottom: 10px;
+    }
+    .hero-texts h6 {
+        font-size: 1.3rem;
+    }
+
+    .button-section {
+        justify-content: start;
+    }
+    .button-section button {
+        width: 10rem;
+    }
+    .hero-img {
+        padding-top: 0;
+        margin-top: 0;
+    }
+
+    .hero-img img {
+        max-width: 100%;
+        padding-right: 2rem;
+    }  
 }
