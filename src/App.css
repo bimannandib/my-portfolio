@@ -28,7 +28,7 @@ header {
   left: 0;
   right: 0;
   z-index: 1000;
-  padding: 0.4rem 5rem;
+  padding: 0.4rem 1.5rem;
   background: #16213E;
   background: linear-gradient(90deg, rgba(22, 33, 62, 1) 0%, rgba(26, 26, 46, 1) 100%);
   backdrop-filter: blur(10px);
