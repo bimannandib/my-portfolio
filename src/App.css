@@ -105,7 +105,7 @@ header {
 
 .hero-texts {
     text-align: center;
-    padding: 2rem 2rem 0 2rem;
+    padding: 2rem 1.7rem 0 1.5rem;
 }
 
 .hero-texts h1 {
@@ -133,7 +133,7 @@ header {
 .hero-texts p {
     color: #a0a0a0;
     font-size: 1.1rem;
-    margin: 1.5rem 0;
+    margin: 1.5rem 0rem;
     line-height: 1.8;
     animation: fadeInUp 0.8s ease 0.2s forwards;
     opacity: 0;
@@ -141,19 +141,19 @@ header {
 
 .button-section {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     gap: 1.3rem;
 }
 
 .button-section button {
-    padding: 1.5rem 1.5rem;
+    padding: 1.2rem 2.5rem;
     border: none;
     color: white;
     border-radius: 5px;
     cursor: pointer;
     font-size: 1rem;
     font-weight: 500;
-    letter-spacing: 0.5ps;
+    letter-spacing: 0.5px;
     transition: all 0.3s ease;
 }
 
@@ -170,7 +170,7 @@ header {
 
 .button-section .btn2 {
     background-color: transparent;
-    border: 1px solid rgb(114, 110, 110);
+    border: 1px solid rgba(50, 130, 184, 0.4);
 }
 
 .button-section .btn2:hover {
@@ -188,7 +188,124 @@ header {
     width: 80vw;
 }
 
-@media (min-width: 768px) {
+#about {
+    padding: 0rem 5% 6rem;
+}
+
+.section-header {
+    text-align: center;
+    margin-top: 5rem;
+}
+
+.section-header h1 {
+    background: linear-gradient(135deg,rgba(232, 232, 232, 1) 0%, rgba(50, 130, 184, 1) 100%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 2.2rem;
+    font-family: 'Playfair Display', serif;
+    font-weight: 900;
+}
+
+.section-header p {
+    color: #a0a0a0;
+    font-size: 1.1rem;
+    margin: 1.5rem 0;
+    line-height: 1.8;
+}
+
+.about-text p {
+    color: #a0a0a0;
+    font-size: 1.15rem;
+    margin: 1.5rem 0;
+    line-height: 1.9;
+}
+
+.stat-card {
+    background-color: #1a1a2e;
+    padding: 24px;
+    border-radius: 10px;
+    margin-bottom: 32px;
+    /* box-shadow: 0 6px 30px rgba(50, 130, 184, 0.4); */
+    border: 1px solid rgba(50, 130, 184, 0.4);
+}
+
+.stat-icon {
+    font-size: 32px;
+    margin-bottom: 0.5rem;
+}
+
+.stat-card h3 {
+    color: #3282b8;
+    font-size: 1rem;
+    font-weight: 600;
+    margin: 0 0 0.3rem 0;
+}
+
+.stat-card p {
+    color: #a0a0a0;
+    font-size: 0.9rem;
+    margin: 0;
+}
+
+.education-timeline {
+    margin-top: 5rem;
+    background-color: #1a1a2e;
+    padding: 32px;
+    border-radius: 10px;
+    border: 1px solid rgba(50, 130, 184, 0.4);
+}
+
+.education-timeline h3 {
+    color: #3282b8;
+}
+
+.education-timeline > h3:first-child {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    margin-top: 0;
+}
+
+.education-item {
+    padding: 1.5rem 0;
+}
+
+.education-item h3{
+    margin: 0 0 8px;
+    font-size: 1.2rem;
+}
+
+.institution {
+    margin: 0 0 0.3rem;
+    color: #a0a0a0;
+    font-weight: 500;
+}
+
+.details {
+    color: #a0a0a0;
+    margin: 0;
+}
+
+.education-item:last-child {
+    padding-bottom: 0;
+}
+
+hr {
+    border: 0.5px solid rgba(50, 130, 184, 0.4);
+}
+
+@media (min-width: 641px) and (max-width: 968px) {
+    .stats-grid {
+        display: grid;
+        grid-template: auto auto / 1fr 1fr;
+        gap: 32px;
+    }
+    .stat-card {
+        margin-bottom: 0;
+    }
+}
+
+
+@media (min-width: 969px) {
     .navbar-links{
         list-style: none;
         display: flex;
@@ -224,7 +341,9 @@ header {
         justify-content: start;
     }
     .button-section button {
-        width: 10rem;
+        width: 11rem;
+        padding: 1rem 2.5rem;
+        white-space: nowrap;
     }
     .hero-img {
         padding-top: 0;
@@ -234,5 +353,40 @@ header {
     .hero-img img {
         max-width: 100%;
         padding-right: 2rem;
-    }  
+    }
+
+    #about {
+        padding-top: 0;
+    }
+
+    .stats-grid {
+        display: grid;
+        grid-template: auto auto / 1fr 1fr;
+        gap: 1.5rem;
+    }
+    .stat-card {
+        margin-bottom: 0;
+    }
+
+    .about-content {
+        display: grid;
+        grid-template: auto auto / 1fr 1fr;
+        gap: 4.5rem;
+        align-items: start;
+    }
+
+    .education-timeline {
+        margin-top: 24px;
+    }
+}
+@media (min-width: 669px) and (max-width: 968px) {
+    .hero-img img {
+        max-width: 50%;
+    }
+}
+@media (min-width: 1345px) {
+    .hero-img img {
+        max-width: 478px;
+        padding-right: 2rem;
+    }
 }
