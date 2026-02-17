@@ -304,6 +304,42 @@ hr {
     }
 }
 
+.footer-content {
+    text-align: center;
+    background-color: #1a1a2e;
+    padding: 3rem;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-bottom: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.footer-links a{
+    color: #a0a0a0;
+    text-decoration: none;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    box-sizing: border-box;
+}
+
+.footer-content p {
+    margin-bottom: 0;
+}
+
+footer small {
+    color: #a0a0a0;
+    font-size: 1.15rem;
+    line-height: 1.9;
+}
+
 
 @media (min-width: 969px) {
     .navbar-links{

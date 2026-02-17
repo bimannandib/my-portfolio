@@ -1,0 +1,26 @@
+export default function Footer() {
+    return (
+      <footer className="footer-content">
+        <div className="footer-links">
+          <a href="#">Home</a>
+          <a href="#">About</a>
+          <a href="#">Projects</a>
+          <a href="#">Contact</a>
+        </div>
+        <div className="social-links">
+          <a href="https://github.com/bimannandib">💻</a>
+          <a href="www.linkedin.com/in/biman-nandi-bn">💼</a>
+          <a href="mailto:bimannandib@gmai.com">📧</a>
+          <a href="https://x.com/LunarKode">🐦</a>
+        </div>
+        <div className="copyright">
+          <p>
+            <small>&copy; 2026 Biman Nandi. All Rights Reserved.</small>
+          </p>
+          <p>
+            <small>Built with React ⚛️</small>
+          </p>
+        </div>
+      </footer>
+    );
+}
