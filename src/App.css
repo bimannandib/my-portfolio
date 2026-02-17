@@ -296,7 +296,7 @@ hr {
 .footer-content {
     text-align: center;
     background-color: #1a1a2e;
-    padding: 3rem;
+    padding: 2rem 1rem;
 }
 
 .footer-links {
@@ -343,13 +343,12 @@ hr {
     margin-bottom: 0;
 }
 
-
 footer small {
+    white-space: nowrap;
     color: #a0a0a0;
     font-size: 0.9rem;
     line-height: 1.9;
-    display: flex;
-    flex-wrap: nowrap;
+    /* padding-right: 3rem; */
 }
 
 
