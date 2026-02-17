@@ -8,10 +8,18 @@ export default function Footer() {
           <a href="#">Contact</a>
         </div>
         <div className="social-links">
-          <a href="https://github.com/bimannandib" target="_blank">💻</a>
-          <a href="www.linkedin.com/in/biman-nandi-bn" target="_blank">💼</a>
-          <a href="mailto:bimannandib@gmai.com" target="_blank">📧</a>
-          <a href="https://x.com/LunarKode" target="_blank">🐦</a>
+          <a href="https://github.com/bimannandib" target="_blank">
+            💻
+          </a>
+          <a href="https://www.linkedin.com/in/biman-nandi-bn/" target="_blank">
+            💼
+          </a>
+          <a href="mailto:bimannandib@gmai.com" target="_blank">
+            📧
+          </a>
+          <a href="https://x.com/LunarKode" target="_blank">
+            🐦
+          </a>
         </div>
         <div className="copyright">
           <p>

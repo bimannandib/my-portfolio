@@ -304,7 +304,7 @@ hr {
     justify-content: center;
     gap: 1.5rem;
     margin-bottom: 1.5rem;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
 }
 
 .footer-links a{
