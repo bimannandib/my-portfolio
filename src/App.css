@@ -343,6 +343,11 @@ hr {
     margin-bottom: 0;
 }
 
+.copyright p {
+    display: flex;
+    flex-wrap: nowrap;
+} 
+
 footer small {
     color: #a0a0a0;
     font-size: 0.9rem;
