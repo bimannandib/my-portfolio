@@ -22,7 +22,7 @@ export default function Footer() {
           </a>
         </div>
         <div className="copyright">
-          <p className="copyParagraph">
+          <p>
             <small>&copy; 2026 Biman Nandi. All Rights Reserved.</small>
           </p>
           <p>

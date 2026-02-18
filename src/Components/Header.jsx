@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-export default function Header() {
+export default function Header(props) {
     const [open, setOpen] = useState(false)
 
     function toggleOpen() {
@@ -26,19 +26,19 @@ export default function Header() {
           </svg>
           <ul className={`navbar-links ${open ? "open" : ""}`}>
             <li>
-              <span>Home</span>
+              <span onClick={props.onHomeClick}>Home</span>
             </li>
             <li>
-              <span>About</span>
+              <span onClick={props.onAboutClick}>About</span>
             </li>
             <li>
-              <span>Skills</span>
+              <span onClick={props.onSkillClick}>Skills</span>
             </li>
             <li>
-              <span>Projects</span>
+              <span onClick={props.onProjectClick}>Projects</span>
             </li>
             <li>
-              <span>Contact</span>
+              <span onClick={props.onContactClick}>Contact</span>
             </li>
           </ul>
         </nav>
