@@ -11,8 +11,8 @@ export default function Footer(props) {
           <a href="https://github.com/bimannandib" target="_blank">
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              width="20"
-              height="20"
+              width="16"
+              height="16"
               fill="currentColor"
               className="bi bi-github"
               viewBox="0 0 16 16"
@@ -23,8 +23,8 @@ export default function Footer(props) {
           <a href="https://www.linkedin.com/in/biman-nandi-bn/" target="_blank">
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              width="20"
-              height="20"
+              width="16"
+              height="16"
               fill="currentColor"
               className="bi bi-linkedin"
               viewBox="0 0 16 16"
@@ -35,8 +35,8 @@ export default function Footer(props) {
           <a href="mailto:bimannandib@gmai.com" target="_blank">
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              width="20"
-              height="20"
+              width="16"
+              height="16"
               fill="currentColor"
               className="bi bi-envelope"
               viewBox="0 0 16 16"
@@ -47,8 +47,8 @@ export default function Footer(props) {
           <a href="https://x.com/LunarKode" target="_blank">
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              width="20"
-              height="20"
+              width="16"
+              height="16"
               fill="currentColor"
               className="bi bi-twitter-x"
               viewBox="0 0 16 16"
