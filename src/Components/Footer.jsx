@@ -1,11 +1,19 @@
-export default function Footer() {
+export default function Footer(props) {
     return (
       <footer className="footer-content">
         <div className="footer-links">
-          <a href="#">Home</a>
-          <a href="#">About</a>
-          <a href="#">Projects</a>
-          <a href="#">Contact</a>
+          <a onClick={props.onHomeClick}>
+            Home
+          </a>
+          <a onClick={props.onAboutClick}>
+            About
+          </a>
+          <a onClick={props.onProjectClick}>
+            Projects
+          </a>
+          <a onClick={props.onContactClick}>
+            Contact
+          </a>
         </div>
         <div className="social-links">
           <a href="https://github.com/bimannandib" target="_blank">

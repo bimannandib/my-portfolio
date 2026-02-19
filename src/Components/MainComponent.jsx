@@ -12,36 +12,47 @@ export default function MainComponent() {
     const skillRef = useRef(null)
     const projectRef = useRef(null)
     const contactRef = useRef(null)
+
+    function onHomeClick() {
+      homeRef.current.scrollIntoView({ behavior: "smooth"})
+    }
+    function onAboutClick() {
+      aboutRef.current.scrollIntoView({ behavior: "smooth"})
+    }
+    function onSkillClick() {
+      skillRef.current.scrollIntoView({ behavior: "smooth"})
+    }
+    function onProjectClick() {
+      projectRefRef.current.scrollIntoView({ behavior: "smooth"})
+    }
+    function onContactClick() {
+      contactRef.current.scrollIntoView({ behavior: "smooth"})
+    }
   return (
     <>
-      <div ref={homeRef}>
-        <Header
-          onHomeClick={() =>
-            homeRef.current.scrollIntoView({ behavior: "smooth" })
-          }
-          onAboutClick={() =>
-            aboutRef.current.scrollIntoView({ behavior: "smooth" })
-          }
-          onSkillClick={() =>
-            skillRef.current.scrollIntoView({ behavior: "smooth" })
-          }
-          onProjectClick={() =>
-            projectRef.current.scrollIntoView({ behavior: "smooth" })
-          }
-          onContactClick={() =>
-            contactRef.current.scrollIntoView({ behavior: "smooth" })
-          }
-        />
+      <Header
+        onHomeClick={onHomeClick}
+        onAboutClick={onAboutClick}
+        onSkillClick={onSkillClick}
+        onProjectClick={onProjectClick}
+        onContactClick={onContactClick}
+      />
+      <div ref={homeRef} style={{ scrollMarginTop: "100px" }}>
+        <HeroSection />
       </div>
-      <HeroSection />
-      <div ref={aboutRef}>
+      <div ref={aboutRef} style={{ scrollMarginTop: "100px" }}>
         <AboutSection />
       </div>
-      <div ref={skillRef}>
+      <div ref={skillRef} style={{ scrollMarginTop: "100px" }}>
         <Expertise />
       </div>
       <Services />
-      <Footer />
+      <Footer
+        onHomeClick={onHomeClick}
+        onAboutClick={onAboutClick}
+        onProjectClick={onProjectClick}
+        onContactClick={onContactClick}
+      />
     </>
   );
 }
