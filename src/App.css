@@ -498,6 +498,10 @@ hr {
     transform: translateY(-4px);
 }
 
+.social-links a {
+    color: white;
+}
+
 .footer-content p {
     margin: 0;
 }
