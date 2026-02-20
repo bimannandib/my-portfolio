@@ -1,5 +1,5 @@
 import profile from "../Assets/profile.png"
-export default function HeroSection() {
+export default function HeroSection(props) {
     return (
       <section className="hero-section">
         <div className="hero-texts">
@@ -11,7 +11,7 @@ export default function HeroSection() {
             with Data Structures & Algorithms.
           </p>
           <div className="button-section">
-            <button className="btn1">View My Work</button>
+            <button onClick={props.onProjectClick} className="btn1">View My Work</button>
             <button className="btn2">Get In Touch</button>
           </div>
         </div>

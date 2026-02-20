@@ -5,6 +5,7 @@ import AboutSection from "./AboutSection";
 import Footer from "./Footer";
 import Expertise from "./Expertise";
 import Services from "./Services";
+import Projects from "./Projects";
 
 export default function MainComponent() {
     const homeRef = useRef(null)
@@ -23,7 +24,7 @@ export default function MainComponent() {
       skillRef.current.scrollIntoView({ behavior: "smooth"})
     }
     function onProjectClick() {
-      projectRefRef.current.scrollIntoView({ behavior: "smooth"})
+      projectRef.current.scrollIntoView({ behavior: "smooth"})
     }
     function onContactClick() {
       contactRef.current.scrollIntoView({ behavior: "smooth"})
@@ -38,7 +39,7 @@ export default function MainComponent() {
         onContactClick={onContactClick}
       />
       <div ref={homeRef} style={{ scrollMarginTop: "100px" }}>
-        <HeroSection />
+        <HeroSection onProjectClick={onProjectClick} />
       </div>
       <div ref={aboutRef} style={{ scrollMarginTop: "100px" }}>
         <AboutSection />
@@ -47,6 +48,9 @@ export default function MainComponent() {
         <Expertise />
       </div>
       <Services />
+      <div ref={projectRef} style={{ scrollMarginTop: "100px" }}>
+        <Projects />
+      </div>
       <Footer
         onHomeClick={onHomeClick}
         onAboutClick={onAboutClick}
