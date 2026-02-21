@@ -6,6 +6,7 @@ import Footer from "./Footer";
 import Expertise from "./Expertise";
 import Services from "./Services";
 import Projects from "./Projects";
+import Contacts from "./Contacts";
 
 export default function MainComponent() {
     const homeRef = useRef(null)
@@ -50,6 +51,9 @@ export default function MainComponent() {
       <Services />
       <div ref={projectRef} style={{ scrollMarginTop: "100px" }}>
         <Projects />
+      </div>
+      <div ref={contactRef} style={{ scrollMarginTop: "10px" }}>
+        <Contacts />
       </div>
       <Footer
         onHomeClick={onHomeClick}
