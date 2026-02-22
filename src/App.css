@@ -479,6 +479,7 @@ hr {
 #projects {
     margin: 6rem 0;
     padding: 0 8%;
+    overflow: hidden;
 }
 
 .section-header h2 {
