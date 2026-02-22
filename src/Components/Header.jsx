@@ -9,7 +9,7 @@ export default function Header(props) {
 
     return (
       <nav className="nav-bar">
-        <h1>BN</h1>
+        <h1 className="logo">BN</h1>
         <svg
           className="mobile-menu-btn"
           onClick={toggleOpen}
@@ -38,6 +38,17 @@ export default function Header(props) {
           </li>
           <li onClick={props.onContactClick}>
             <span>Contact</span>
+          </li>
+          <li>
+            <a
+              className="resume"
+              href="/Biman-Nandi-Resume.pdf"
+              download="Biman-Nandi-Resume.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Download Resume
+            </a>
           </li>
         </ul>
       </nav>

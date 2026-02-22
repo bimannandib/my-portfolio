@@ -40,7 +40,10 @@ export default function MainComponent() {
         onContactClick={onContactClick}
       />
       <div ref={homeRef} style={{ scrollMarginTop: "100px" }}>
-        <HeroSection onProjectClick={onProjectClick} />
+        <HeroSection
+          onProjectClick={onProjectClick}
+          onContactClick={onContactClick}
+        />
       </div>
       <div ref={aboutRef} style={{ scrollMarginTop: "100px" }}>
         <AboutSection />
@@ -48,7 +51,7 @@ export default function MainComponent() {
       <div ref={skillRef} style={{ scrollMarginTop: "100px" }}>
         <Expertise />
       </div>
-      <Services />
+      <Services onContactClick={onContactClick} />
       <div ref={projectRef} style={{ scrollMarginTop: "100px" }}>
         <Projects />
       </div>

@@ -1,4 +1,4 @@
-export default function Services() {
+export default function Services(props) {
     return (
       <section id="services">
         <div className="section-header">
@@ -26,7 +26,7 @@ export default function Services() {
             <hr />
             <li>Version Control & Collaboration</li>
           </ul>
-          <button className="btn btn-primary">Let's Work Together</button>
+          <button onClick={props.onContactClick} className="btn btn-primary">Let's Work Together</button>
         </div>
       </section>
     );

@@ -9,7 +9,7 @@ export default function AboutSection() {
         <div className="about-content">
           <div className="about-text">
             <p>
-              I'm a final-year B.Tech student in Electronics and
+              I'm a Pre-final year B.Tech student in Electronics and
               Telecommunication at Kalinga Institute of Industrial Technology,
               set to graduate in 2027. My journey in technology has led me to
               master Data Structures & Algorithms and develop a passion for web
@@ -58,7 +58,7 @@ export default function AboutSection() {
               </div>
               <div className="details">Expected Graduation: 2027</div>
             </div>
-            
+
             <hr />
 
             <div className="education-item">
@@ -71,8 +71,8 @@ export default function AboutSection() {
 
             <div className="education-item">
               <h3>Secondary (10th)</h3>
-              <div className="institution">WBSE</div>
-              <div className="details">Score: 72%</div>
+              <div className="institution">WBBSE</div>
+              <div className="details">Score: 72.4%</div>
             </div>
           </div>
         </div>
