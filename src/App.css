@@ -156,7 +156,7 @@ body {
 }
 
 .button-section button {
-    padding: 1.2rem 2.5rem;
+    padding: 1rem 0.8rem;
     border: none;
     color: white;
     border-radius: 5px;
@@ -818,6 +818,10 @@ hr {
 
 
 @media (min-width: 641px) and (max-width: 968px) {
+    .button-section button {
+        padding: 1rem 2.5rem;
+    }
+
     .stats-grid {
         display: grid;
         grid-template: auto auto / 1fr 1fr;

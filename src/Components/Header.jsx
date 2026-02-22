@@ -42,10 +42,8 @@ export default function Header(props) {
           <li>
             <a
               className="resume"
-              href="/Biman-Nandi-Resume.pdf"
+              href="Biman_Nandi_Resume.pdf"
               download="Biman-Nandi-Resume.pdf"
-              target="_blank"
-              rel="noopener noreferrer"
             >
               Download Resume
             </a>
