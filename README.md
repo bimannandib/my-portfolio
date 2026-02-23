@@ -34,7 +34,7 @@ This is my personal portfolio website built to showcase my projects, skills, and
 ![Projects](./screenshots/projects.png)
 
 ### 📱 Mobile View
-![Mobile View](./screenshots/mobile.png)
+![Mobile View](./screenshots/mobile.jpeg)
 
 ### 🙋 About Section
 ![About](./screenshots/about.png)
