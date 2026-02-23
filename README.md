@@ -2,7 +2,7 @@
 
 This is my personal portfolio website built to showcase my projects, skills, and experience as a Frontend Developer.
 
-🚀 Live Demo: https://biman-nandi-portfolio.netlify.app/  
+🚀 Live Demo: https://biman-nandi-portfolio.vercel.app/  
 ---
 
 ## ✨ Features
@@ -27,7 +27,20 @@ This is my personal portfolio website built to showcase my projects, skills, and
 
 ## 📸 Screenshots
 
-![Home Page](./screenshots/home.png)  
+### 🏠 Home Page
+![Home Page](./screenshots/home.png)
+
+### 🧩 Projects Section
+![Projects](./screenshots/projects.png)
+
+### 📱 Mobile View
+![Mobile View](./screenshots/mobile.jpeg)
+
+### 🙋 About Section
+![About](./screenshots/about.png)
+
+### 📬 Contact Section
+![Contact](./screenshots/contact.png)  
 ---
 
 ## 📁 Folder Structure
@@ -55,7 +68,7 @@ npm run dev
 🧠 What I Learned
 Component-based architecture in React
 
-Deploying frontend apps using Netlify
+Deploying frontend apps using Vercel
 
 Managing state and props in React
 
