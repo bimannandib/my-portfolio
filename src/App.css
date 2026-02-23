@@ -14,6 +14,7 @@
     --text-muted: #a0a0a0;
     --bg: #0a0a14;
     --border: rgba(50, 130, 184, 0.2);
+    --border2: rgba(50, 130, 184, 0.4);
 }
 
 body {
@@ -180,12 +181,12 @@ body {
 .button-section .btn1:hover {
     background-color: #205375;
     transform: translateY(-2px);
-    box-shadow: 0 6px 30px rgba(50, 130, 184, 0.4);
+    box-shadow: 0 6px 30px var(--border2);
 }
 
 .button-section .btn2 {
     background-color: transparent;
-    border: 1px solid rgba(50, 130, 184, 0.4);
+    border: 1px solid var(--border2);
 }
 
 .button-section .btn2:hover {
@@ -242,7 +243,13 @@ body {
     padding: 24px;
     border-radius: 10px;
     margin-bottom: 32px;
-    border: 1px solid rgba(50, 130, 184, 0.4);
+    border: 1px solid var(--border2);
+}
+
+.stat-card:hover {
+    transition: all 0.3s ease;
+    transform: translateY(-4px);
+    box-shadow: 0 6px 30px var(--border2);
 }
 
 .stat-icon {
@@ -268,7 +275,7 @@ body {
     background-color: var(--primary);
     padding: 32px;
     border-radius: 10px;
-    border: 1px solid rgba(50, 130, 184, 0.4);
+    border: 1px solid var(--border2);
 }
 
 .education-timeline h3 {
@@ -340,14 +347,13 @@ hr {
     margin-bottom: 2.5rem;
     padding: 2rem;
     border-radius: 12px;
-    border: 1px solid var(--border);
+    border: 1px solid var(--border2);
     transition: all 0.3s ease;
 }
 
 .skill-category:hover {
     transform: translateY(-4px);
-    box-shadow: 0 6px 30px rgba(50, 130, 184, 0.4);
-    border: 1px solid var(--border);
+    box-shadow: 0 6px 30px var(--border2);
 }
 
 .skill-category h3 {
@@ -413,7 +419,7 @@ hr {
 
 .service-card:hover {
     transform: translateY(-2px);
-    box-shadow: 0 6px 30px rgba(50, 130, 184, 0.4);
+    box-shadow: 0 6px 30px var(--border2);
     border: 1px solid var(--highlight);
 }
 
@@ -476,7 +482,7 @@ hr {
 .btn.btn-primary:hover {
     background-color: #205375;
     transform: translateY(-2px);
-    box-shadow: 0 6px 30px rgba(50, 130, 184, 0.4);
+    box-shadow: 0 6px 30px var(--border2);
 }
 
 
@@ -508,7 +514,7 @@ hr {
     border-radius: 10px 10px 0 0;
     text-align: center;
     font-size: 5rem;
-    border: 1px solid rgba(50, 130, 184, 0.4);
+    border: 1px solid var(--border2);
     border-bottom: none;
 }
 
@@ -518,7 +524,7 @@ hr {
     flex-direction: column;
     border-radius: 0 0 10px 10px;
     background-color: var(--primary);
-    border: 1px solid rgba(50, 130, 184, 0.4);
+    border: 1px solid var(--border2);
     border-top: none;
     padding: 2rem;
 }

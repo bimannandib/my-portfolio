@@ -8,21 +8,21 @@ export default function Expertise() {
 
         <div className="skills-grid">
           <div className="skill-category">
-            <h3>Programming & DSA</h3>
+            <h3>Programming Languages</h3>
             <div className="skill-tag">
               <span>Java</span>
-              <span>Data Structure</span>
-              <span>Algorithm</span>
-              <span>Problem Solving</span>
+              <span>JavaScript</span>
+              <span>Python</span>
+              <span>C</span>
             </div>
           </div>
           <div className="skill-category">
             <h3>Web Development</h3>
             <div className="skill-tag">
-              <span>React</span>
               <span>HTML5</span>
               <span>CSS</span>
               <span>JavaScript</span>
+              <span>React.js</span>
             </div>
           </div>
           <div className="skill-category">
@@ -31,6 +31,15 @@ export default function Expertise() {
               <span>Git</span>
               <span>GitHub</span>
               <span>VS Code</span>
+              <span>Vercel</span>
+            </div>
+          </div>
+          <div className="skill-category">
+            <h3>CS</h3>
+            <div className="skill-tag">
+              <span>DSA</span>
+              <span>OOPs</span>
+              <span>DBMS</span>
             </div>
           </div>
         </div>
