@@ -1,4 +1,26 @@
+import DataStats from '../Data/AboutData1'
+import eduData from '../Data/AboutData2'
+
 export default function AboutSection() {
+  const aboutStats = DataStats.map((item, index) => (
+    <div key={index} className="stat-card">
+      <div className="stat-icon">{item.icon}</div>
+      <h3>{item.title}</h3>
+      <p>{item.about}</p>
+    </div>
+  ));
+
+  const academyData = eduData.map((item, index) => (
+    <>
+      <div key={index} className="education-item">
+        <h3>{item.title}</h3>
+        <div className="institution">{item.institute}</div>
+        <div className="details">{item.details}</div>
+      </div>
+
+      {index !== eduData.length - 1 && <hr />}
+    </>
+  ));
     return (
       <section id="about">
         <div className="section-header">
@@ -15,65 +37,21 @@ export default function AboutSection() {
               master Data Structures & Algorithms and develop a passion for web
               development.
             </p>
+
             <p>
-              I love creating interactive, user-friendly applications using
-              modern technologies like React, and I'm constantly learning and
-              building projects to sharpen my skills. My goal is to become a
-              proficient full-stack developer and contribute to innovative
-              projects that make a difference.
+              I specialize in frontend development using React and enjoy
+              building clean, responsive, and user-friendly interfaces.
+              Currently, I am learning backend technologies to become a
+              full-stack developer. I love building real-world projects and
+              continuously improving my problem-solving skills.
             </p>
-            <div className="stats-grid">
-              <div className="stat-card">
-                <div className="stat-icon">🎓</div>
-                <h3>Education</h3>
-                <p>B.Tech (Expected 2027)</p>
-              </div>
 
-              <div className="stat-card">
-                <div className="stat-icon">💻</div>
-                <h3>Specialization</h3>
-                <p>Web Development</p>
-              </div>
-
-              <div className="stat-card">
-                <div className="stat-icon">🏆</div>
-                <h3>DSA</h3>
-                <p>Completed</p>
-              </div>
-
-              <div className="stat-card">
-                <div className="stat-icon">🚀</div>
-                <h3>Status</h3>
-                <p>Open to Opportunities</p>
-              </div>
-            </div>
+            <div className="stats-grid">{aboutStats}</div>
           </div>
 
           <div className="education-timeline">
             <h3>Education</h3>
-            <div className="education-item">
-              <h3>B.Tech in Electronics and Telecommunication</h3>
-              <div className="institution">
-                Kalinga Institute of Industrial Technology
-              </div>
-              <div className="details">Expected Graduation: 2027</div>
-            </div>
-
-            <hr />
-
-            <div className="education-item">
-              <h3>Higher Secondary (12th)</h3>
-              <div className="institution">WBCHSE</div>
-              <div className="details">Score: 89.1%</div>
-            </div>
-
-            <hr />
-
-            <div className="education-item">
-              <h3>Secondary (10th)</h3>
-              <div className="institution">WBBSE</div>
-              <div className="details">Score: 72.4%</div>
-            </div>
+            {academyData}
           </div>
         </div>
       </section>
