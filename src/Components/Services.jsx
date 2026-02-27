@@ -1,3 +1,6 @@
+import Data from '../Data/ServicesData'
+import React from 'react'
+
 export default function Services(props) {
     return (
       <section id="services">
@@ -7,26 +10,21 @@ export default function Services(props) {
         </div>
 
         <div className="service-card">
-          <div className="service-icon">💻</div>
-          <h3>Web Development</h3>
-          <p>
-            Building responsive, modern web applications using React, HTML, CSS,
-            and JavaScript. From concept to deployment, I create user-friendly
-            interfaces that deliver exceptional user experiences.
-          </p>
+          <div className="service-icon">{Data.icon}</div>
+          <h3>{Data.service}</h3>
+          <p>{Data.description}</p>
 
           <ul className="service-features">
-            <li>Responsive Website Development</li>
-            <hr />
-            <li>React Application Development</li>
-            <hr />
-            <li>Front-end Development</li>
-            <hr />
-            <li>UI Implementation</li>
-            <hr />
-            <li>Version Control & Collaboration</li>
+            {Data.points.map((item, index) => (
+              <React.Fragment key={index}>
+                <li>{item}</li>
+                {index < Data.points.length - 1 && <hr />}
+              </React.Fragment>
+            ))}
           </ul>
-          <button onClick={props.onContactClick} className="btn btn-primary">Let's Work Together</button>
+          <button onClick={props.onContactClick} className="btn btn-primary">
+            Let's Work Together
+          </button>
         </div>
       </section>
     );
