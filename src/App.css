@@ -200,8 +200,12 @@ body {
 }
 
 .hero-img img {
-    margin-top: 2rem;
     width: 80vw;
+    margin-top: 2rem;
+    object-fit: cover;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    border: 5px solid var(--border);
 }
 
 
@@ -923,7 +927,7 @@ hr {
 
     .hero-img img {
         max-width: 100%;
-        padding-right: 2rem;
+        /* padding-right: 2rem; */
     }
 
     #about {
@@ -979,7 +983,7 @@ hr {
 @media (min-width: 1255px) {
     .hero-img img {
         max-width: 478px;
-        padding-right: 2rem;
+        /* padding-right: 2rem; */
     }
     
     .project-grid {
