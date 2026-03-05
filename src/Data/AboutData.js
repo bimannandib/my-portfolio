@@ -17,7 +17,7 @@ export default {
     {
       icon: "🏆",
       title: "DSA",
-      about: "Solved 76 Questions On LeetCode & 65 on TUF",
+      about: "Solved 150+ Questions",
     },
     {
       icon: "🚀",
