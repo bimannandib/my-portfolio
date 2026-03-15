@@ -5,7 +5,7 @@ const skillsData = [
   },
   {
     category: "Web Development",
-    skills: ["HTML5", "CSS3", "JavaScript", "React.js", "Node.js"],
+    skills: ["HTML5", "CSS3", "JavaScript", "React.js", "Node.js", "Express.js", "MongoDB"],
   },
   {
     category: "Tools & Version Control",
